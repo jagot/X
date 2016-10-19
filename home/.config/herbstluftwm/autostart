@@ -25,6 +25,8 @@ hc keybind $Mod-Return spawn ${TERMINAL:-xterm} # use your $TERMINAL with xterm 
 hc keybind $Mod-x spawn dmenu_run
 hc keybind $Mod-e spawn emacs
 hc keybind XF86HomePage spawn google-chrome-stable
+hc keybind Control-Escape spawn ${TERMINAL:-xterm} htop
+
 
 # Volume
 hc keybind XF86AudioLowerVolume spawn ~/.config/herbstluftwm/volume.sh down

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export TERMINAL='st -f Consolas:size=12'
+export TERMINAL=st
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap

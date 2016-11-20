@@ -28,6 +28,12 @@ hc keybind $Mod-e spawn emacs
 hc keybind XF86HomePage spawn google-chrome-stable
 hc keybind Control-Escape spawn ${TERMINAL:-xterm} htop
 
+# MPC
+
+hc keybind XF86AudioPlay spawn mpc toggle
+hc keybind $Mod-Shift-n spawn mpc next
+hc keybind $Mod-Shift-p spawn mpc prev
+hc keybind $Mod-F8 spawn ${TERMINAL:-xterm} ncmpcpp
 
 # Volume
 hc keybind XF86AudioLowerVolume spawn ~/.config/herbstluftwm/volume.sh down

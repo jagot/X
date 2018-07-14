@@ -37,4 +37,5 @@ fi
 [ -f ~/.screen.sh ] && ~/.screen.sh
 [ -f ~/.xprofile ] && source ~/.xprofile
 
-exec herbstluftwm --locked
+# exec herbstluftwm --locked
+exec bspwm

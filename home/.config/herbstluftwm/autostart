@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export TERMINAL=st
+
 # this is a simple config for herbstluftwm
 
 hc() {
@@ -178,11 +180,6 @@ hc unlock
 herbstclient set tree_style '╾│ ├└╼─┐'
 
 hc detect_monitors
-
-nitrogen --restore
-killall compton
-sleep 1
-compton &
 
 # find the panel
 panel=~/.config/herbstluftwm/panel.sh

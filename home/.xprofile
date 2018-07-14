@@ -1,6 +1,28 @@
+#!/bin/bash
+
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# This construct is used to enable laptop-only features such as
+# battery level and backlight, when applicable.
+laptops=(longitude) # List of hostnames of laptops I use
+if [[ " ${laptops[*]} " == *" $(hostname) "* ]]; then
+    export IS_LAPTOP=true
+    export IS_DESKTOP=false
+else
+    export IS_LAPTOP=false
+    export IS_DESKTOP=true
+fi
+
+nitrogen --restore
+killall compton
+sleep 1
+compton &
+
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 ibus-daemon -drx
+
 setxkbmap -option ctrl:nocaps
+killall xcape
 xcape -e 'Shift_L=parenleft;Shift_R=parenright'

@@ -14,6 +14,9 @@ alt + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+ctrl + alt + shift + l
+        slock
+
 #
 # bspwm hotkeys
 #

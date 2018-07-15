@@ -13,10 +13,11 @@ else
     export IS_DESKTOP=true
 fi
 
-nitrogen --restore
+# nitrogen --restore
+hsetroot -solid "#504945"
 killall compton
 sleep 1
-compton &
+compton --blur-background &
 
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus

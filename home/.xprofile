@@ -27,3 +27,5 @@ ibus-daemon -drx
 setxkbmap -option ctrl:nocaps
 killall xcape
 xcape -e 'Shift_L=parenleft;Shift_R=parenright'
+
+[[ -f ~/.xsite ]] && source ~/.xsite

@@ -18,3 +18,5 @@ bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mpv state=floating
 bspc rule -a rofi focus=on
+
+bspc rule -a matplotlib state=floating

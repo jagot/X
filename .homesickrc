@@ -3,6 +3,6 @@
 require 'mkmf'
 
 unless find_executable('yay').nil?
-  %x( yay -S bspwm sxhkd polybar nitrogen hsetroot compton ibus ibus-anthy ibus-hangul xorg-apps xcape ttf-dejavu slock --noconfirm --needed )
+  %x( yay -S bspwm sxhkd polybar nitrogen hsetroot compton ibus ibus-anthy ibus-hangul xorg-apps xcape ttf-dejavu slock flameshot --noconfirm --needed )
   %x( dconf load /desktop/ibus/ < ibus.dconf )
 end

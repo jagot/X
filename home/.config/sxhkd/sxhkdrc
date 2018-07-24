@@ -50,6 +50,12 @@ XF86AudioNext
         mpc next
 
 #
+# screenshots
+#
+Print
+        flameshot gui
+
+#
 # bspwm hotkeys
 #
 
